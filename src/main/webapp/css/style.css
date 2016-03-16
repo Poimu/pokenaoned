@@ -1,0 +1,366 @@
+@font-face {
+	font-family: customfont;
+	src: url(font/ubuntu-r.ttf);
+}
+
+@font-face {
+	font-family: pokemon;
+	src: url(font/pokemon.ttf);
+}
+
+
+body {
+	background-image: url("images/leather.png");
+	font-family: customfont;
+	min-width: 800px;
+}
+
+#logo {
+	font-family: pokemon;
+	font-size: 55px;
+	text-align: center;
+	margin-top: 100px;
+	
+	
+}
+
+#logoCorner {
+	font-family: pokemon;
+	font-size: 40px;
+	margin: auto; 
+	
+}
+
+#selectFilterTypo, #reloginArea, #flex-button,#selectFilterLine,#logoLine {
+	display: flex;
+	flex-direction: row;	
+}
+
+#anchorAddProduct{
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	text-decoration: underline;
+}
+
+#anchorAddProduct:hover {
+	cursor: pointer; 
+}
+
+#flex-button {
+	min-width: 800px;
+}
+
+#loginMsg {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#login {
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.loginField {
+  	border: 1px solid;
+	padding: 7px;
+	font-size: 12px;
+	margin-bottom: 05px;
+}
+
+#relogin{
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-left: auto;
+    padding: 2px 04px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    height: 20px;
+    border: 0px;
+    border-radius: 2px;
+    width: 100px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+#relogin:hover {
+	background: #f4f6f6;
+	cursor: pointer;
+	box-shadow: 0 0 1px;
+}
+
+ #closeCross:hover {
+   border: 1px solid;
+   border-color: red;
+ }
+
+#relogin:active {
+	background: #808080;
+}
+
+#lockIcon {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	border: 1px solid;
+	transform: scale(1.3);
+	cursor: pointer; 
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#errorLogin {
+	color: red;
+	margin: auto;
+
+}
+
+#boardProducts, #board, .supplierLine, #addProductForm {
+	display: flex;
+	flex-direction: column;
+}
+
+#board {
+	min-width: 900px;
+}
+
+.productLine, #boardHeader, .supplierField, .productStock, .addProductLine, #addSupplierType, .addSupplierRadio, #addProductCondition, .addProductTypo, .productConditionRadio{
+	display: flex;
+	flex-direction: row;
+}
+
+#closeForm {
+	margin-bottom: 10px;
+}
+
+#addProductForm {
+	margin-top: 30px;
+	-webkit-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.75);
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 28px;
+	background-color: #F4F6F6;
+}
+
+input[type='file'] {
+  color: transparent;
+}
+
+.ui-tooltip {
+	font-size: 10px;
+}
+
+.addProductTypo {
+	width: 43%;
+	margin-left: 08px;
+	margin-right: 08px;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 12px;
+}
+
+.addSelect {
+	width: 237px;
+	padding-left: 08px;
+	padding-right: 08px;
+	font-size: 12px;
+}
+
+.addInput {
+	width: 44%;
+	font-size: 12px;
+	padding-left: 08px;
+	padding-right: 08px;
+	border-radius: 05px;
+	border: white;
+	height: 26px;
+	margin-top: 4px;
+}
+
+.addInput:hover {
+    -webkit-box-shadow:inset 0px 0px 0px 1px grey;
+    -moz-box-shadow:inset 0px 0px 0px 1px grey;
+    box-shadow:inset 0px 0px 0px 1px grey;
+}
+
+.productConditionRadio, .addSupplierRadio {
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 12px;
+}
+
+#selectFilterTypo {
+	margin: 10px;
+	font-size: 12px;
+}
+
+.stockValue {
+	margin-left: auto;
+}
+
+.headerField, .blockField {
+	width: 10.5%;
+	text-align: center;
+}
+
+.stockInput {
+	width: 50%;
+	height: 20px;
+	font-size: 08px;
+	border: solid 1px;
+}
+
+.stockValue, .blockField, .headerField, .deleteProduct, .stockInput, input[type="radio"] {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.deleteProduct:hover{
+	transform: scale(1.5);
+	cursor: pointer; 
+}
+
+.stockAdd, .stockRemove {
+	border: solid 1px;
+	border-radius: 30px;
+	transform: scale(0.7);
+	cursor: pointer; 
+}
+
+.stockValue {
+	margin-right: 5px;
+}
+
+img {
+	max-height: 150px;
+	max-width: 150px;
+}
+
+#boardHeader {
+	margin-top: 15px;
+	margin-bot: 30px;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 12px;
+	
+}
+
+#closeCross {
+	background-color: white;
+	border: solid 1px;
+	border-radius: 30px;
+	position: relative;
+	bottom: 35px;
+	left: 170px;
+	cursor: pointer;
+}
+
+.productLine {
+	margin-top: 08px;
+	margin-bottom: 08px;
+	font-size: 10px;
+}
+
+.supplierLine {
+	margin-left: 11%;
+	width: 300px;
+	font-size: 10px;
+	margin-bottom: 14px;
+	border-left: solid 2px black;
+	padding-left: 7px;
+}
+
+#formTitle {
+	margin-left: 28%;
+	margin-bottom: 10px;
+}
+
+#addProductButton {
+	width: 20%;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px;
+	font-size: 12px;
+	padding: 7px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	background-color: #FDFEFE;
+	
+}
+
+#addProductButton:hover {
+	background-color: #F4F6F6;
+	box-shadow: 0 0 1px;
+}
+
+.productBlock:nth-child(odd) {
+	background-color: #F4F6F6;
+}
+
+.productBlock:nth-child(even) {
+	background-color: #fdfefe;
+}
+
+.error, .errorTypo {
+	color: red;
+}
+
+#addProductCondition, #addSupplierType {
+	border: medium none white;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 26px;
+    margin-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 44%;
+    background-color: white;
+}
+
+input[type="radio"] {
+	transform: scale(0.7);
+}
+
+.addProductLine:hover .addProductTypo {
+	text-decoration: underline;
+}
+
+.productCode {
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+}
+
+.productCode:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+	-webkit-transition: width .5s ease, background-color .5s ease;
+	-moz-transition: width .5s ease, background-color .5s ease;
+	margin:auto;
+}
+
+.productBlock:hover .productCode:after {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	background: black;
+}
